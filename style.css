@@ -23,6 +23,13 @@ Fonts
   align-items: center;
   justify-content: space-between;
 }
+.nam {
+  display: flex;
+  align-items: center;
+}
+.nam i {
+  display: none;
+}
 .nav-header h1 {
   text-transform: uppercase;
   font-weight: bold;
@@ -74,16 +81,16 @@ u {
 }
 
 .notes {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
 }
 .notes h2 {
   font-size: 72px;
   color: white;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -92,9 +99,6 @@ u {
   opacity: 0.9;
   letter-spacing: 0.1rem;
   color: white;
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
   max-width: 400px;
 }
 .fact a {
@@ -382,3 +386,371 @@ footer {
   color: black;
   padding: 0.3rem 0.8rem;
 }
+.mobile-bar {
+  font-size: 20px;
+  cursor: pointer;
+}
+.mobile-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* .search {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  background: white;
+  border: none;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+.search .search-icon {
+  position: absolute;
+  top: 25%;
+  right: 0px;
+
+  top: 50%;
+  z-index: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.search-icon::before {
+  content: 'heyefvgtrsdrv';
+  position: absolute;
+  top: 0;
+}
+.search .input {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  padding-left: 30px;
+  font-size: 12px;
+}
+.clear {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+.search .search-icon.move {
+  left: 5px;
+  transform: translateX(0);
+}
+.search .input,
+.search .clear {
+  display: none;
+}
+
+.search .input.show,
+.search .clear.show {
+  display: block;
+}
+
+.search .active {
+  width: 100px;
+} */
+
+@media screen and (max-width: 768px) {
+  .nam {
+    gap: 20px;
+  }
+  .nam i {
+    display: block;
+  }
+  .gender,
+  .accounts {
+    display: none;
+  }
+  .jeans-oclock {
+    padding: 0;
+  }
+  .notes {
+    left: 5px;
+    bottom: 10px;
+  }
+  .notes h2 {
+    font-size: 42px;
+  }
+  .fact {
+    font-size: 16px;
+    max-width: 40%;
+  }
+  .wordings {
+    padding-bottom: 2%;
+  }
+  .wordings h3 {
+    font-size: 32px;
+  }
+  .wordings p {
+    font-size: 14px;
+  }
+  .img-scroll img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .sec-scroll img {
+    /* width: 100px; */
+    height: 300px;
+    object-fit: cover;
+  }
+  .sec-scroll .img1 {
+    width: 350px;
+  }
+  .sec-scroll .img2 {
+    width: 250px;
+  }
+  .quote p {
+    font-size: 20px;
+  }
+  .story img {
+    height: 400px;
+  }
+  .story h2 {
+    top: auto;
+    font-size: 48px;
+    bottom: 10px;
+  }
+  .story p {
+    font-size: 12px;
+  }
+  .our-store {
+    gap: 10px;
+  }
+  .jeans-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .store h2 {
+    font-size: 32px;
+  }
+  .store p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .btns {
+    font-size: 12px;
+  }
+  .delivery {
+    font-size: 12px;
+  }
+  .follow h2 {
+    font-size: 32px;
+  }
+  .follow a {
+    font-size: 12px;
+  }
+  .third-scroll {
+    gap: 10px;
+  }
+  .third-scroll img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+  .first-div {
+    flex-direction: column;
+  }
+  .sec-div p {
+    width: 70%;
+  }
+  .ageless {
+    font-size: 122px;
+  }
+  .toplink {
+    font-size: 18px;
+  }
+  .copy {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .nam {
+    gap: 10px;
+  }
+  .nam i {
+    display: block;
+  }
+  .gender,
+  .accounts {
+    display: none;
+  }
+  .jeans-oclock {
+    padding: 0;
+  }
+  .notes {
+    display: grid;
+    grid-template-columns: 1fr;
+    bottom: 20px;
+  }
+  .notes h2 {
+    font-size: 42px;
+  }
+
+  .fact {
+    font-size: 14px;
+    bottom: 60px;
+    max-width: 90%;
+  }
+  .wordings {
+    padding-bottom: 2%;
+  }
+  .wordings h3 {
+    font-size: 24px;
+  }
+  .wordings p {
+    font-size: 12px;
+  }
+  .img-scroll img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .sec-scroll img {
+    /* width: 100px; */
+    height: 200px;
+    object-fit: cover;
+  }
+  .sec-scroll .img1 {
+    width: 250px;
+  }
+  .sec-scroll .img2 {
+    width: 200px;
+  }
+  .quote p {
+    font-size: 12px;
+  }
+  .story img {
+    height: 200px;
+  }
+  .story h2 {
+    top: auto;
+    font-size: 24px;
+    bottom: 5px;
+  }
+  .story p {
+    font-size: 8px;
+    bottom: 10px;
+  }
+  .our-store {
+    gap: 10px;
+  }
+  .jeans-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .store h2 {
+    font-size: 24px;
+  }
+  .store p {
+    font-size: 10px;
+    max-width: 90%;
+    margin-bottom: 0;
+  }
+  .btns {
+    font-size: 12px;
+  }
+  .delivery {
+    font-size: 12px;
+  }
+  .follow h2 {
+    font-size: 24px;
+  }
+  .follow a {
+    font-size: 12px;
+  }
+  .third-scroll {
+    gap: 10px;
+  }
+  .third-scroll img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .first-div {
+    flex-direction: column;
+  }
+  .sec-div p {
+    width: 100%;
+  }
+  .ageless {
+    font-size: 52px;
+  }
+  .toplink {
+    font-size: 18px;
+  }
+  .linkss {
+    font-size: 12px;
+  }
+  .copy {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (max-width: 468px) {
+  .search {
+    position: relative;
+    width: 000px;
+    height: 30px;
+    background: white;
+    border: none;
+    transition: 0.5s;
+    box-shadow: 0 0 0 1px black;
+    border-radius: 20px;
+  }
+  .search .icon {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 5px;
+    z-index: 1;
+    transform: translateX(-10000%);
+  }
+  .search .input {
+    position: relative;
+    width: 000px;
+    height: 30px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 30px;
+    font-size: 12px;
+  }
+  .clear {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+  }
+} */
