@@ -395,6 +395,9 @@ footer {
   align-items: center;
   gap: 10px;
 }
+.mobile-container {
+  display: none;
+}
 /* .search {
   position: relative;
   width: 300px;
@@ -479,6 +482,9 @@ footer {
   .notes {
     left: 5px;
     bottom: 10px;
+  }
+  .mobile-container {
+    display: block;
   }
   .notes h2 {
     font-size: 42px;
@@ -595,6 +601,7 @@ footer {
   .jeans-oclock {
     padding: 0;
   }
+
   .notes {
     display: grid;
     grid-template-columns: 1fr;
